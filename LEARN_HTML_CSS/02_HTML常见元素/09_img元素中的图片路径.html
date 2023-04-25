@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- 
+    src: 
+      1. 网络图片
+      2. 本地图片
+   -->
+  <!-- 本地图片
+      图片的路径:
+        1> 绝对(absolute)路径: 根盘符开始查找,一直找到这个资源
+        2> 相对(relative)路径: 相当于当前文件的一个路径
+          .  代表当前文件夹,可以省略
+          .. 代表上一级文件夹
+    -->
+  <!-- 网络地址 -->
+  <img
+    src="https://p3-sign.toutiaoimg.com/tos-cn-i-qvj2lq49k0/dcced89228724701b398ae209f96355e~noop.image?_iz=58558&from=article.pc_detail&x-expires=1683012406&x-signature=lgfyr3GxNzD8U9qi70qrMZDLntg%3D"
+    alt="">
+
+  <!-- 绝对路径 -->
+  <img src="E:\WEB\LEARN_HTML_CSS\images\header.jpg" alt="">
+
+  <!-- 相对路径 -->
+  <img src="../images/header.jpg" alt="">
+
+</body>
+
+</html>
