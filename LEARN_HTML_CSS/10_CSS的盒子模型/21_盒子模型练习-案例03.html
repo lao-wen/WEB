@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <title>Document</title>
+  <style>
+    a{
+      display: inline-block;
+    }
+    .item {
+      width: 310px;
+      height: 250px;
+      margin: 0 auto;
+    }
+
+    .item .album img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .item .info a {
+      width: 100%;
+      /* overflow: hidden; */
+    }
+
+    .item .info p {
+      font-size: 15px;
+      margin-top: 8px;
+
+      /* 显示一样 */
+      /* white-space: nowrap; */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .item .info .anchor{
+      font-size: 13px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+
+    .item .info .anchor::before{
+      content: url(../images/Login.svg);
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      top: 1px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="item">
+    <a class="album" href="https://www.bilibili.com/video/BV1ng4y177P7/?spm_id_from=333.1007.tianma.6-2-20.click"
+      target="_blank">
+      <img
+        src="https://i1.hdslb.com/bfs/archive/291db639f44472869389bc4eccf9527688326b3d.jpg@672w_378h_1c_!web-home-common-cover.avif"
+        referrerpolicy="no-referrer">
+    </a>
+    <div class="info">
+      <a href="#">
+        <p>【PS】央美大佬花356个小时把这套PS教程整理出来了！包含所有干货内容！我就不信这还没人看！（PS练习、PS抠图、海报设计、PS基础）</p>
+      </a>
+      <a class="anchor" href="#">
+        <span class="nickname">红喵教育官方号</span>
+        <span class="time">· 4-23</span>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
